@@ -1,0 +1,104 @@
+@media screen and (max-width: 1240px)
+{
+  .inherit
+  {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1240px)
+{  .inherit
+  {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .max500
+  {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px)
+{
+.black-container {
+    background: rgba(0, 0, 0, 0.94);
+    padding: 50px 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+}
+.white-container {
+  background: #f4f4f4;
+  padding: 50px 40px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.center-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.center-image-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.uk-subnav > * > *
+{
+      color: #fff !important;
+}
+
+.uk-subnav-pill > * > :hover, .uk-subnav-pill > * > :focus, .uk-subnav-pill > .uk-active > *
+{
+  background: none !important;
+  border-bottom: solid;
+  color: #fff ;
+  border-radius: 0px;
+  border-color: #00BABC;
+}
+
+span.long-2 {
+  color: white;
+}
+p, h1, h2, h4, h5, h6
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: inherit;
+}
+nav ul li a:hover  {
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    border-color: white;
+}
+.jb_black
+{
+  color: black !important;
+}
+.inputs
+{
+  background: none;
+  border-width: 0 0 1 0;
+  color: white;
+  width: 50%;
+  height: 30px;
+}
+@media (max-width: 1600px)
+{
+  .visible-xlarge
+  {
+    display: none !important;
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-family: AvenirNext-Italic;
+  font-size: 15px;
+}

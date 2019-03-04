@@ -1,0 +1,240 @@
+/* Базовые теги */
+
+class="uk-alert"
+class="uk-alert uk-alert-warning"
+class="uk-alert uk-alert-success"
+class="uk-alert uk-alert-danger"
+
+image-overflow-left  - обрезка изображения справа
+image-overflow-right   - обрезка изображения слева
+
+uk-pull-1-2 - сдвинуть блок влево
+uk-push-1-2 - сдвинуть блок вправо
+
+http://html5.by/blog/flexbox/ - Flex с примерами
+http://css.yoksel.ru/radial-gradients/ - радиальные градиенты с примерами
+https://getuikit.com/docs/introduction - документация UiKit 3
+https://getuikit.com/v2/docs/base.html - документация UiKit 2
+
+/* фон для блока */
+
+style="min-height: 1000px; background-image: url('https://img-fotki.yandex.ru/get/56796/481812360.9/0_261078_7925c2e1_orig'); background-position: center center; background-repeat: no-repeat; display: flex; justify-content: space-between; flex-direction: column;"
+
+style="min-height: 1000px;background-image: url('https://www3.res.meizu.com/static/cn/pro7/summary/images/section-bg-1_e7c904e.jpg'); background-position: center center; background-repeat: no-repeat;background-size: cover;"
+
+style="text-shadow: -1px -1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000, 1px 1px 10px #000;" - подсветка текста
+
+style="margin: 0 auto; padding: 0 10px; display: block;"
+/* Картинка с уменьшением до опредиленной ширины */
+
+	<div class="center-image-div">
+		<img src="URL" alt="" class="center-image-img" style="min-width: 1600px;" >
+	</div>
+
+	.center-image-div {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+
+	.center-image-img {
+		display: block;
+		margin: 0 auto;
+	}
+
+/* ------- just text-------- */
+        <p>&nbsp;</p>
+        <h2></h2>
+        <p></p>
+        <p>&nbsp;</p>
+
+/* ---------------- UIKIT 2 ----------------- */
+
+
+/* Простой грид */
+
+<div class="uk-grid uk-grid-collapse">
+	<div class="uk-width-small-1-2 uk-text-center uk-margin-bottom">
+	<img src="URL" alt="" />
+		<p>111</p>
+	</div>
+	<div class="uk-width-small-1-2 uk-text-center uk-margin-bottom">
+	<img src="URL" alt="" />
+		<p>2223</p>
+	</div>
+</div>
+
+/* Грид с выравниванием по вертикали */
+
+<div class="uk-grid-collapse uk-vertical-align">
+	<div class="uk-width-small-1-2 uk-vertical-align-middle">
+        <div class="max500 inherit">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+	</div>
+	<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-center">
+		<img src=""/>
+	</div>
+</div>
+
+/* Текст справа для xperia */
+
+<div style="align-items: center; display: flex; min-height: 630px; justify-content: flex-end;">
+	<div class="uk-visible-large bg-large" style="background-image: url('https://lotus.se-mc.com/image/www-static.se-mc.com/blogs.dir/0/files/2017/07/02-d3.b4-epic-desktop-v2-32d88d05c8ea808e8a21a72a84ef5812.jpg?wid=2000');">&nbsp;</div>
+	<div class="uk-visible-medium bg-medium" style="background-image: url('https://lotus.se-mc.com/image/www-static.se-mc.com/blogs.dir/0/files/2017/07/02-d3.b4-epic-desktop-v2-32d88d05c8ea808e8a21a72a84ef5812.jpg?wid=2000');">&nbsp;</div>
+	<div class="uk-visible-small bg-small" style="background-image: url('https://lotus.se-mc.com/image/www-static.se-mc.com/blogs.dir/0/files/2017/07/02-d3.b4-epic-phone-v2-3cd098daeaf85340cba1e40833206378.jpg?wid=574');">&nbsp;</div>
+	<div class="uk-grid-collapse uk-vertical-align" style="position: absolute; width: 100%;">
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left" style="min-height: 280px;">&nbsp;</div>
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left">
+			<div class="max500 inherit black">
+				<h2 class="black">Эпические развлечения</h2>
+				<p>23-мегапиксельная камера и 5,5-дюймовый дисплей Full HD подарят еще больше любимых развлечений.</p>
+				<p><a href="https://www.youtube.com/watch?v=2wtI4b9rp_Q" class="uk-button jcepopup " data-mediabox="1" data-mediabox-width="90%" data-mediabox-height="90%">СМОТРЕТЬ ВИДЕО</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+/* Текст слева для xperia */
+
+<div style="align-items: center; display: flex; min-height: 630px; justify-content: flex-end;">
+	<div class="uk-visible-large bg-large" style="background-image: url('https://lotus.se-mc.com/image/www-static.se-mc.com/blogs.dir/0/files/2017/07/03-d3.a4-next-level-desktop-28b6b904651ef9dc8698e5384f7cb7df.jpg?wid=2000');">&nbsp;</div>
+	<div class="uk-visible-medium bg-medium" style="background-image: url('https://lotus.se-mc.com/image/www-static.se-mc.com/blogs.dir/0/files/2017/07/03-d3.a4-next-level-desktop-28b6b904651ef9dc8698e5384f7cb7df.jpg?wid=2000');">&nbsp;</div>
+	<div class="uk-visible-small bg-small" style="background-image: url('https://lotus.se-mc.com/image/www-static.se-mc.com/blogs.dir/0/files/2017/07/03-d3.a4-next-level-phone-280d7b334b279798de45eef0215bdec7.jpg?wid=574');">&nbsp;</div>
+	<div class="uk-grid-collapse uk-vertical-align" style="position: absolute; width: 100%;">
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left uk-push-1-2" style="min-height: 280px;">&nbsp;</div>
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left uk-pull-1-2">
+			<div class="max500 inherit white-container">
+				<h2>Доведите свои снимки до совершенства</h2>
+				<p>Снимайте четкие, качественные фотографии даже при тусклом свете благодаря передовой камере 23 МП и матрице Exmor RS™. </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+/* Текст на фоне видео */
+
+<div style="align-items: center; min-height: 585px; display: flex; justify-content: flex-end;">
+	<div style="display: flex; justify-content: center; align-items: center; align-self: flex-start; min-width: 550px;">
+		<video class="video" preload="auto" loop="loop" autoplay="autoplay" poster="https://img-fotki.yandex.ru/get/195990/481812360.3/0_256d9a_4b4db539_orig">
+			<source src="//v.mifile.cn/b2c-mimall-media/acdf959034bad716e851ec2f22483661.mp4" type="video/mp4" />
+			<source src="//c1.mifile.cn/f/i/17/mi6/index/video-apear.webm" type="video/webm" />
+		</video>
+	</div>
+	<div class="uk-grid-collapse uk-vertical-align" style="position: absolute; width: 100%;">
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left uk-push-1-2" style="min-height: 300px;"><span style="color: #ffffff;"></span></div>
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left uk-pull-1-4">
+			<div class="white" style="max-width: 800px; text-align: center;">
+				<h2>Корпус сияет как нефритовый камень</h2>
+				<p>Фантастическое стекло, изогнутое с четырех сторон, и рама из нержавеющей стали</p>
+				<p><a href="https://www.youtube.com/watch?v=svukLhryWLQ" class="uk-button jcepopup noicon" target="_blank" data-mediabox-width="90%" data-mediabox-height="90%" rel="noopener noreferrer">СМОТРЕТЬ ВИДЕО</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+/*-------------новый текст слева---------------*/
+<div style="align-items: center; display: flex; justify-content: flex-end; background: #000; color: white;">
+	<img src="https://cdnmedia.huawei.ru/ru/media/wysiwyg/product-overview/honor9/resources/section-1.jpg" alt="" class="uk-hidden-small" style="align-self: flex-start;" />
+	<div class="uk-grid-collapse uk-vertical-align absolutesmall" style="width: 100%;">
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left uk-push-1-2">
+			<img src="https://cdnmedia.huawei.ru/ru/media/wysiwyg/product-overview/honor9/resources/section-1.jpg" alt="" class="image-overflow-right uk-visible-small" style="align-self: flex-start;" /></div>
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left uk-pull-1-2">
+			<div class="max500 inherit">
+				<p>&nbsp;</p>
+				<h2>Великолепный дизайн</h2>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+/*------------новый текст справа------------*/
+<div style="align-items: center; display: flex; background: #868f96;">
+	<img src="https://cdnmedia.huawei.ru/ru/media/wysiwyg/product-overview/honor9/resources/section-11.jpg" alt="" class="uk-hidden-small" style="align-self: flex-start;" />
+	<div class="uk-grid-collapse uk-vertical-align absolutesmall" style="width: 100%;">
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left">
+			<img src="https://cdnmedia.huawei.ru/ru/media/wysiwyg/product-overview/honor9/resources/section-11.jpg" alt="" class="image-overflow-left uk-visible-small" style="align-self: flex-start;" /></div>
+		<div class="uk-width-small-1-2 uk-vertical-align-middle uk-text-left">
+			<div class="max500 inherit" style="color: white;">
+				<p>&nbsp;</p>
+				<h2>Мечта меломана</h2>
+				<p>Электровелосипед Xiaomi MiJia QiCycle оснащен интеллектуальной системой распределения нагрузки. Она автоматически определяет текущие условия движения (подъем в гору или спуск) и за счет помощи электродвигателя, создает условия чтобы вам всегда было одинаково легко крутить педали.</p>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+/* ---------- текст нижней/по центру/верхней части фото  ----------- */
+<div style="align-items: flex-end; display: flex;">
+	<img src="https://cdnmedia.huawei.ru/ru/media/wysiwyg/product-overview/honor9/resources/section-13.jpg" alt="" class="uk-hidden-small" style="align-self: flex-start;" />
+	<div class="uk-grid-collapse uk-vertical-align absolutesmall" style="width: 100%;">
+		<div class="uk-width-small-1-2 uk-hidden-large uk-vertical-align-middle uk-text-left">
+			<img src="https://cdnmedia.huawei.ru/ru/media/wysiwyg/product-overview/honor9/resources/section-13.jpg" alt="" class="image-overflow-right uk-visible-small" style="align-self: flex-start;" /></div>
+		<div class="uk-width-small-1-1 uk-vertical-align-middle uk-text-left">
+			<div class="white" style="text-align: center;">
+				<p>&nbsp;</p>
+				<h2></h2>
+				<p>Аудиоэффекты Honor 9 передают уникальное звучание разных музыкальных стилей. В партнерстве с компанией Monster для Honor 9 был разработан эквалайзер Honor Purity, который обеспечивает чистейшее звучание как высоких, так и низких частот.</p>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+/* --- JavaScript toggle--- */
+
+<div style="padding: 0 10px;"><button class="uk-button-primary" data-uk-toggle="{target:'.open1',  animation:'uk-animation-slide-bottom'}">Смотреть галерею</button></div>
+
+<div class="open1 uk-hidden" aria-hidden="true" style="">
+  <p>&nbsp;</p>
+  <p>
+    Content
+  </p>
+  <p>&nbsp;</p>
+</div>
+
+/* ---------- UIKIT 3 ----------- */
+
+/* Самый простой грид */
+
+<div uk-grid>
+    <div class="uk-width-auto@m"></div>
+    <div class="uk-width-auto@m"></div>
+</div>
+
+/* Текст на изображении слева */
+
+<div style="align-items: center; min-height: 526px; display: flex; justify-content: flex-end;"><img src="https://img-fotki.yandex.ru/get/215803/207057257.0/0_1b05c9_c3e8309e_orig" alt="" class="image-overflow-left" style="align-self: flex-start;" />
+	<div class="uk-grid uk-grid-collapse uk-child-width-1-2@s" style="position: absolute; width: 100%; z-index: 999;" uk-height-match="210px">
+		<div style="min-height: 210px;">&nbsp;</div>
+		<div class="uk-flex-first@s">
+			<div class="white">
+				<h2>AI для портретной съемки</h2>
+				<p>nubia Z17 позволяет создавать просто невероятно красивые портреты благодаря технологии искусственного интеллекта (AI). Он проводит глубокое изучение полученной с камеры информации, точно идентифицирует профиль и создает естественное размытие фона.<span class="uk-visible@s">А результат его работы можно просмотреть прямо в реальном времени.</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+/* Текст на изображении справа - надо доработать */
+
+<div style="align-items: center; min-height: 532px; display: flex;"><img src="https://img-fotki.yandex.ru/get/222565/481812360.9/0_261079_d0991b2e_orig" alt="" class="image-overflow-left" style="align-self: flex-start;" />
+	<div class="uk-grid uk-grid-collapse uk-child-width-1-2@s" style="position: absolute; width: 100%;" uk-height-match="210px">
+		<div style="min-height: 210px;">&nbsp;</div>
+		<div>
+			<div class="black">
+				<h2>Безграничные горизонты</h2>
+				<p>Уникальный безрамочный дизайн откроет новые просторы для взаимодействия с Вашим смартфоном! Легким касанием края экрана Вы сможете переключать приложения, регулировать яркость и многое другое.</p>
+			</div>
+		</div>
+	</div>
+	<div class="uk-grid uk-grid-collapse uk-child-width-1-2@s display" style="position: absolute; width: 100%;">
+		<div style="height: 10px;">&nbsp;</div>
+		<div class="uk-flex-first@s uk-text-right"><img src="https://img-fotki.yandex.ru/get/6309/481812360.9/0_26107b_8aa110fc_orig" alt="" style="max-height: 500px; padding: 0 134px;" /></div>
+	</div>
+</div>
